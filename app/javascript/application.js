@@ -3,6 +3,7 @@ import "popper"
 import "bootstrap"
 
 
+
 window.onload = function () {
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(d => new bootstrap.Popover(d))
