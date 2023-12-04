@@ -73,6 +73,7 @@ GEM
       rake (>= 10.4, < 14.0)
     autoprefixer-rails (10.4.16.0)
       execjs (~> 2)
+    bcrypt (3.1.20)
     bindex (0.8.1)
     bootsnap (1.17.0)
       msgpack (~> 1.2)
@@ -89,6 +90,7 @@ GEM
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
+    diff-lcs (1.5.0)
     erubi (1.12.0)
     execjs (2.9.1)
     ffi (1.16.3)
@@ -205,6 +207,23 @@ GEM
       psych (>= 4.0.0)
     reline (0.4.0)
       io-console (~> 0.5)
+    rspec-core (3.12.2)
+      rspec-support (~> 3.12.0)
+    rspec-expectations (3.12.3)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.12.0)
+    rspec-mocks (3.12.6)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.12.0)
+    rspec-rails (6.1.0)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
+      railties (>= 6.1)
+      rspec-core (~> 3.12)
+      rspec-expectations (~> 3.12)
+      rspec-mocks (~> 3.12)
+      rspec-support (~> 3.12)
+    rspec-support (3.12.1)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -247,6 +266,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  bcrypt (~> 3.1.7)
   bootsnap
   bootstrap (= 5.3.1)
   debug
@@ -260,6 +280,7 @@ DEPENDENCIES
   rails (~> 7.0.6)
   rails-flog
   rails-i18n
+  rspec-rails (~> 6.1.0)
   sassc-rails (= 2.1.2)
   sprockets-rails
   stimulus-rails
