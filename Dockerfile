@@ -19,6 +19,9 @@ COPY Gemfile.lock .
 # バイナリのgemではなく、ソースコードからgemをビルドする設定
 RUN bundle config set force_ruby_platform true
 
+# bundle installでGemfileに記述されているgemをインストール
+RUN bundle install
+
 
 
 # bundle installでGemfileに記述されているgemをインストール

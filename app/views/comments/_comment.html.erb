@@ -6,7 +6,8 @@
     <span>
     <%# <%= button_to '削除', comment, method: :delete %>
     
-    <%= link_to '削除', comment, deta: {turbo: false, method: :delete, turbo_confirm: '削除してよろしいですか？' } %>
+    <%# <%= link_to '削除', comment, deta: {turbo: false, method: :delete, turbo_confirm: '削除してよろしいですか？' } %> 
+    <%= link_to '削除', comment_path, method: :delete, data: { turbo: false } %>
     </span>
   </div>
   </div>
