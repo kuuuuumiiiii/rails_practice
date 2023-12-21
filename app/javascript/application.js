@@ -10,3 +10,5 @@ window.onload = function () {
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(d => new bootstrap.Tooltip(d))
 }
+import "@hotwired/turbo-rails"
+import "controllers"

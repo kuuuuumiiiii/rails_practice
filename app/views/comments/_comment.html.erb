@@ -4,10 +4,9 @@
     <span><%= comment.name %></span>
     <span><%= comment.created_at.to_formatted_s(format = :datetime_jp) %></span>
     <span>
-    <%# <%= button_to '削除', comment, method: :delete %>
     
     <%# <%= link_to '削除', comment, deta: {turbo: false, method: :delete, turbo_confirm: '削除してよろしいですか？' } %> 
-    <%= link_to '削除', comment_path, method: :delete, data: { turbo: false } %>
+    <%= link_to '削除', comment, data: { turbo_method: :delete, turbo_confirm: "削除しますか？" } %>
     </span>
   </div>
   </div>
